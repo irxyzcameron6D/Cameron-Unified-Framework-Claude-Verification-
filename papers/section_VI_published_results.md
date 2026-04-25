@@ -313,10 +313,4 @@ No free parameters beyond the measured density ρ.
 
 ---
 
-*The three published papers are the citable foundation.*  
-*Everything in this section is supported by peer-reviewed results.*  
-*The remaining sections (I–V) are in preparation.*
-
----
-
 *Open questions documented in [disputes/what_doesnt_work.md](../disputes/what_doesnt_work.md)*
