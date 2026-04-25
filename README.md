@@ -1,6 +1,6 @@
 > This is the **Claude verification version** of the Cameron Unified Framework.  
 > For the narrative synthesis and orbital visualizations, see the  
-> [Gemini Synthesis repository](https://irxyzcameron6D/Cosmology-Phase-Kinetics).
+> [Gemini Synthesis repository]([https://irxyzcameron6D/Cosmology-Phase-Kinetics](https://github.com/irxyzcameron6D/Cosmology-Phase-Kinetics).
 
 ---
 
