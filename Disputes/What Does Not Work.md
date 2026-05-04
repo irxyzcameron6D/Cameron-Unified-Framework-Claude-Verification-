@@ -210,3 +210,39 @@ not yet quantitatively derived.
 
 *This file is the most important file in the repository.*  
 *It is what makes the successes above trustworthy.*
+
+---
+
+## Correction: Neutron Electromagnetic Description (Resolved)
+
+**Original statement in Section III:**
+"The neutron has q = 0 exactly, so Q_n = pure imaginary.
+It gravitates and does not interact electromagnetically."
+
+**Why this was wrong:**
+The neutron has zero **net** electric charge but is not
+electromagnetically inert. Its internal quark structure produces:
+
+- Magnetic moment: μ_n = −1.913 nuclear magnetons (measured)
+- Charge radius²: r²_n = −0.114 fm² (measured, negative sign)
+- Oscillating instantaneous electric field from quark motion
+- Neutron-electron scattering (measured)
+
+All of these arise from the internal quark charge distribution,
+not from a nonzero net charge.
+
+**Corrected statement:**
+The neutron's **net** complex charge is Q_n = i·m_n·√G (pure
+imaginary). Its net electromagnetic interaction at large distances
+is zero. At short range, the internal quark motion (Zitterbewegung
+at 0.99c) produces an oscillating instantaneous electric field
+whose correlations between neighboring neutrons ARE the nuclear
+van der Waals force confirmed at 8–14σ in the Monte Carlo.
+
+The negative charge radius confirms the anchor model geometry:
+d quarks (negative) at the surface, u quark (positive) near the
+center. The magnetic moment confirms the quark current loops
+produce a nonzero DC magnetic field even though the net charge
+is zero.
+
+**Status:** Resolved and corrected in Section III and Section IV.
