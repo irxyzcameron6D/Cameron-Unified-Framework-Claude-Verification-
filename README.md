@@ -326,7 +326,7 @@ accountability for all claims belong to Donald Cameron.
 ---
 
 *For the non-specialist version of this framework, see:*  
-**[The Story of Everything](narrative/the_story_of_everything.md)**
+**[The Story of Everything](narrative/the_story_of_everything.pdf)**
 
 *For a comparison of the Gemini and Claude versions, see:*  
 **[COMPARISON.md](COMPARISON.md)**
