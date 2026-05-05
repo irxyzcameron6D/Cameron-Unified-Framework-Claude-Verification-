@@ -648,10 +648,11 @@ which next-generation X-ray observatories will determine.
 
 ---
 
-*Previous: [Section VI.5 — The Three Papers as One Framework](section_VI_published_results.md)* 
+*Previous: [Section VI.5 — The Three Papers as One Framework](section_VI_published_results.md)*  
 *Return to: [README](../README.md)*  
 *Figures: [magellanic_cloud_test.png](../figures/magellanic_cloud_test.png)*  
 *Figures: [rotation_curves_full_profile.png](../figures/rotation_curves_full_profile.png)*
+
 ---
 
 *This draft has not been submitted for peer review.*  
