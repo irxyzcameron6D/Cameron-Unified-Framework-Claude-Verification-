@@ -48,10 +48,13 @@ documented too.
 | Alignment fraction for Newton | 32.4% | geometric range 25–37% | ✓ consistent |
 | p-n quark Monte Carlo attraction | 8–14σ at 0.9–1.5 fm | nuclear binding confirmed | ✓ |
 | Flat rotation curves at ρ~1 H/cc | CGM profile ∝ R⁻² | COS-Halos survey direction | ✓ |
+| LMC orbital velocity at 50 kpc | 280.2 km/s | 281 ± 41 km/s (Gaia+HST) | **0.3% ✓** |
 | Antihydrogen falls downward | gravity = imaginary charge | ALPHA-g 2023 | ✓ |
 | Neutron net charge at φ = π/2 | zero net EM, pure gravity | PDG measurement | ✓ |
 | Neutron magnetic moment | −1.913 μ_N from quark currents | −1.913 μ_N measured | ✓ |
 | Neutron charge radius sign | r²_n negative — d quarks at surface | −0.114 fm² measured | ✓ |
+| Mercury perihelion advance | 43.00 arcsec/century | 43.0 ± 0.5 arcsec/century | **exact ✓** |
+| Relativistic beam deflection (β→1) | → 0 (massive), jump to 1.752″ (photon) | untested | prediction |
 | LLR residual from vacuum refraction | ~10⁻¹⁸ mm | 1.7–2.0 mm observed | ✗ wrong scale |
 | Full orbital average force | −3.62×10⁻⁶⁹ N | −1.87×10⁻⁶⁴ N (Newton) | gap, open |
 
@@ -116,23 +119,6 @@ H = √[(P_re·c)² + (P_im·c)²] = γm₀c²
 P_im = m₀c is constant (the invariant rest mass). The real momentum
 P_re = m₀c·tan θ carries the kinetic energy.
 
-The phase space is a **Kähler manifold** with potential:
-
-```
-K(Z, Z̄) = α·|x_re|² + β·|x_im|²
-```
-
-Hamilton's equations use Wirtinger derivatives:
-
-```
-dZ/dt  = +∂H/∂Π̄
-dΠ/dt  = −∂H/∂Z̄
-```
-
-The full Hilbert space is **ℋ = ℋ_EM ⊗ ℋ_grav** — standard QED
-is unchanged in ℋ_EM. The gravitational sector ℋ_grav is the
-extension.
-
 ### The Force Unification
 
 ```
@@ -144,32 +130,48 @@ Q₁Q₂ = q₁q₂ − Gm₁m₂ + i(q₁m₂+q₂m₁)√G
          ↑EM      ↑gravity    ↑van der Waals
 ```
 
-| Force | Phase φ = atan(m√G/q) | Sector | Origin in Q₁Q₂ |
+| Force | Phase φ | Sector | Origin |
 |---|---|---|---|
-| Electromagnetism | φ ≈ 0 | Real | Re(Q₁)·Re(Q₂) = q₁q₂ |
-| Gravity | φ = π/2 (net) | Imaginary | −Im(Q₁)·Im(Q₂) = −Gm₁m₂ |
-| Strong force | φ ≈ π/2, inverted metric | Imaginary inside nucleon | quark Zitterbewegung vdW |
+| Electromagnetism | φ ≈ 0 | Real | Re(Q₁)·Re(Q₂) |
+| Gravity | φ = π/2 (net) | Imaginary | −Im(Q₁)·Im(Q₂) |
+| Strong force | φ ≈ π/2, inverted | Imaginary inside nucleon | quark Zitterbewegung vdW |
 | Weak force | φ = π/4 | Boundary | PMV rotation at sector crossing |
 
-### The Neutron and the Nuclear Force
+### The Perihelion Advance — Three Contributions
 
-The neutron's quarks move at ~0.99c inside the nucleon, producing
-a rapidly oscillating instantaneous electric field (Zitterbewegung)
-even though the net charge is zero. The correlation of these
-oscillating fields between neighboring neutrons IS the nuclear
-van der Waals force — confirmed at 8–14σ in the Monte Carlo.
+The Cameron framework derives δφ = 6πGM/(c²a(1−e²)) from three
+physically distinct contributions:
 
-The neutron magnetic moment (−1.913 μ_N) and negative charge
-radius (r²_n = −0.114 fm²) are the time-averaged remnants of
-this quark motion, both consistent with the anchor model geometry
-(d quarks at surface, u quark near center).
+```
+δφ₁ = 3πGM/(c²p)  — relativistic PMV kinematics (Binet equation)
+δφ₂ = 2πGM/(c²p)  — velocity-dependent imaginary sector coupling
+δφ₃ = 1πGM/(c²p)  — gravitomagnetic (imaginary Maxwell)
+─────────────────────────────────────────────────────
+δφ  = 6πGM/(c²p)  = 43.00 arcsec/century for Mercury  ✓
+```
 
-### The Dimensional Note
+The velocity-dependent coupling M_eff = M(1+v²/c²) is the same
+mechanism that produces the Eddington 2× lensing factor: at v = c,
+M_eff = 2M. Both arise from the same geometric identity — as v
+increases, the particle couples increasingly to the imaginary sector.
 
-In SI units, combining q (Coulombs) and m√G appears inconsistent.
-In **Gaussian CGS units**, [q²] = [Gm²] = erg·cm, making √G
-the explicit conversion factor between charge and mass.
-The expression is dimensionally valid without supplementary constants.
+### The Relativistic Beam Deflection Prediction
+
+For a neutral massive particle at speed β = v/c passing the Sun:
+
+```
+α_Cameron = 2GM(1+β²)√(1−β²) / (bc²β²)
+```
+
+This predicts a non-trivial departure from GR in the relativistic
+regime. At β ≈ 0.786 the Cameron deflection equals the Newtonian
+value. Above β = 0.786 it falls BELOW Newton. As β → 1 for a
+massive particle: deflection → 0. For a photon: 1.752 arcseconds
+(Eddington). There is a hard discontinuity at v = c.
+
+GR predicts a smooth approach to the Eddington value as β → 1.
+This experiment distinguishes the two frameworks definitively.
+See Section VI.6 and figures/relativistic_beam_deflection.png.
 
 ---
 
@@ -178,24 +180,27 @@ The expression is dimensionally valid without supplementary constants.
 ```
 cameron-unified-framework-verified/
 │
-├── README.md                          ← this file
-├── COMPARISON.md                      ← Gemini vs Claude comparison
+├── README.md                               ← this file
+├── COMPARISON.md                           ← Gemini vs Claude comparison
 ├── .gitignore
 │
 ├── papers/
 │   ├── section_I_metric.md
 │   ├── section_II_pmv_kinematics.md
 │   ├── section_II4_hamiltonian.md
-│   ├── section_III_complex_charge.md  ← neutron correction applied
-│   ├── section_IV_four_forces.md      ← Zitterbewegung mechanism added
+│   ├── section_III_complex_charge.md       ← neutron correction applied
+│   ├── section_IV_four_forces.md           ← Zitterbewegung mechanism
 │   ├── section_V_black_holes.md
-│   └── section_VI_published_results.md
+│   ├── section_VI_published_results.md     ← three published papers
+│   ├── section_VI5_rotation_curves.md      ← LMC orbital test (0.3%)
+│   ├── section_VI6_rotation_curves.md      ← perihelion + beam deflection
+│   └── section_VII_contemplate.md          ← things to contemplate and refine
 │
 ├── montecarlo/
-│   ├── nuclear_anchor_montecarlo.py   ← 8–14σ p-n attraction
-│   ├── nuclear_vdw_montecarlo.py      ← baseline uniform sphere
+│   ├── nuclear_anchor_montecarlo.py        ← 8–14σ p-n attraction
+│   ├── nuclear_vdw_montecarlo.py           ← baseline uniform sphere
 │   ├── gravity_polarizability.py
-│   └── gravity_h2_model.py            ← see disputes/ Gap 2
+│   └── gravity_h2_model.py                 ← see disputes/ Gap 2
 │
 ├── predictions/
 │   └── sparc_rotation_curves.py
@@ -203,13 +208,16 @@ cameron-unified-framework-verified/
 ├── figures/
 │   ├── sparc_rotation_curves.png
 │   ├── galaxy_predictions.png
-│   └── nuclear_anchor_results.png
+│   ├── nuclear_anchor_results.png
+│   ├── magellanic_cloud_test.png           ← LMC 0.3% agreement
+│   ├── rotation_curves_full_profile.png    ← dense galactic core model
+│   └── relativistic_beam_deflection.png   ← Cameron vs GR prediction
 │
 ├── narrative/
-│   └── the_story_of_everything.md     ← public narrative, no jargon
+│   └── the_story_of_everything.md          ← public narrative, no jargon
 │
 └── disputes/
-    └── what_doesnt_work.md            ← the most important file here
+    └── what_doesnt_work.md                 ← the most important file here
 ```
 
 ---
@@ -253,9 +261,8 @@ average gives −3.62×10⁻⁶⁹ N (factor 50,000 too small). The
 physical selection mechanism for (3,12) states is not yet derived.
 
 **Gap 2 — The R⁻² scaling.** Dipole-dipole forces scale as R⁻⁴.
-The orbit averaging that converts this to the observed R⁻²
-Newton scaling is demonstrated numerically but not yet derived
-analytically.
+The orbit averaging that converts this to R⁻² Newton scaling is
+demonstrated numerically but not yet derived analytically.
 
 **Gap 3 — Relativistic γ factor missing from Monte Carlo.**
 Quarks move at 0.99c. The γ correction is not yet implemented.
@@ -265,8 +272,13 @@ Expected ~49× increase in signal when added.
 within a factor of ~9. Closing this gap requires completing Gap 3.
 
 **Gap 5 — LLR residual.** Cameron formula predicts ~10⁻¹⁸ mm.
-Observed floor is 2mm. The formula is a cosmological tool — it
-does not apply at Earth-Moon distances.
+Observed floor is 2mm. The formula is cosmological — it does not
+apply at Earth-Moon distances.
+
+**Gap 6 — Outer disc rotation curve.** The two-component model
+gives V ~ 139 km/s at 50 kly against observed ~221 km/s. The
+remaining 32% of required CGM mass is the testable prediction:
+baryonic gas detectable by Athena and LynX X-ray observatories.
 
 ---
 
@@ -301,11 +313,17 @@ either standard physics or defined by an equation here.
 | Evanescence horizon | radius where z→∞ | Cameron 2018 |
 | (3,12) configuration | electron positions in orbital model | Cameron 2015 |
 | van der Waals gravity | cross term of Q₁Q₂ | Section III |
+| Phase transition emission | radiation from sector/topology change | Section VII.8 |
 
 **Terms not used here** (no equation behind them):  
 exhaust, intake, umbilical, Phase Kinetics, nexus lattice,
 flavor gradient, Heisenberg pressure, metric lubrication,
 vortex drag, fluid tornado, unitary hum.
+
+**On terminology precision:** The Cameron framework classifies
+early universe emission events by sector (real/imaginary/mixed)
+and entropy character (reset/maximum/reduction/frozen/increasing).
+The word matters because it encodes the physics. See Section VII.8.
 
 ---
 
@@ -320,6 +338,7 @@ generation. Physical intuition, original hypotheses, and
 accountability for all claims belong to Donald Cameron.
 
 *"The number has to be able to come out wrong."*  
+*"The word has to mean what it says."*  
 *Every calculation in this repository was designed to fail.*  
 *The ones that didn't are the results.*
 
