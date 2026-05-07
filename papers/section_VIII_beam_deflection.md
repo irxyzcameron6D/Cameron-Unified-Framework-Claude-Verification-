@@ -29,21 +29,55 @@ Newtonian prediction 2GM/(bv²) as a function of β.
 
 ## VIII.2 The Cameron Deflection Formula
 
-Using the impulse approximation with M_eff = M(1+β²):
+### Why Im(Q) = m√G is the invariant rest mass
 
-The transverse impulse on a particle of mass m at speed v = βc
-passing the Sun with impact parameter b:
+The Cameron framework uses the complex charge Q = q + im√G where m
+is the **invariant rest mass** — not the relativistic mass γm. This
+is the modern (Interpretation B) reading of special relativity:
 
 ```
-Δp_⊥  =  ∫ F_⊥ dt  =  2G·M_eff·m / (bv)
-        =  2GM·m·(1+β²) / (bβc)
+Interpretation A (Einstein 1905, now deprecated):
+  p = (γm)(v)  — mass increases with velocity to γm
+  
+Interpretation B (modern SR, universally preferred):
+  p = m(γv)   — rest mass m is invariant, proper velocity γv diverges
 ```
 
-The deflection angle α = Δp_⊥ / p where p = γmv = γmβc:
+The Cameron framework applies Interpretation B consistently to both
+kinematics and gravitational coupling:
+
+- Kinematic momentum: p = m(γv) — rest mass times proper velocity
+- Gravitational coupling: Im(Q) = m√G — invariant rest mass
+
+GR couples gravity to the stress-energy tensor, which includes kinetic
+energy and effectively uses γm as the gravitational source term —
+implicitly mixing Interpretation A into the gravitational coupling.
+
+**The Cameron framework uses invariant rest mass for both kinematics
+and gravitational coupling. This is the more internally consistent
+application of Interpretation B. The beam deflection experiment
+tests exactly this choice.**
+
+### The deflection formula
+
+Using the impulse approximation with M_eff = M(1+β²) for the Sun's
+effective mass as seen by the moving particle:
+
+The transverse impulse on a particle of rest mass m at speed v = βc:
+
+```
+Δp_⊥  =  2G·M(1+β²)·m / (bv)  =  2GM·m·(1+β²) / (bβc)
+```
+
+The deflection angle α = Δp_⊥ / p where p = m(γv) = γmβc:
 
 ```
 α_Cameron  =  2GM(1+β²)√(1−β²) / (bc²β²)               (VIII.1)
 ```
+
+The √(1−β²) = 1/γ factor enters because the relativistic momentum
+p = m(γv) grows without bound as β → 1. The proper velocity γv → ∞
+as β → 1 — the particle has too much inertia to be deflected.
 
 For comparison, General Relativity (PPN with γ_PPN = 1):
 
@@ -51,10 +85,10 @@ For comparison, General Relativity (PPN with γ_PPN = 1):
 α_GR  =  (2GM/bc²) · (1+β²)/β²                          (VIII.2)
 ```
 
-The difference is the factor √(1−β²) = 1/γ in the Cameron formula.
-This factor arises because the Cameron framework divides by the full
-relativistic momentum p = γmβc, while the GR formula does not have
-the same momentum suppression for massive particles.
+GR gives a smooth transition to the Eddington value because it
+couples to relativistic energy (effectively γm in the numerator),
+causing the γ factors to cancel. Cameron couples to rest mass m,
+retaining the 1/γ suppression.
 
 ---
 
@@ -81,174 +115,186 @@ Eddington value (photon, grazing Sun): **1.752 arcseconds**
 
 ## VIII.4 Three Distinguishing Features
 
-### Feature 1 — The Crossover at β = 0.786
+### Feature 1 — Crossover at β = 0.786
 
-At β ≈ 0.786 the Cameron deflection equals the Newtonian deflection.
-The crossover occurs when:
+At β ≈ 0.786 the Cameron deflection equals the Newtonian deflection:
 
 ```
 (1+β²)√(1−β²)  =  1                                      (VIII.3)
 ```
 
-which has the numerical solution β ≈ 0.7862.
+Solution: β ≈ 0.7862. Above this velocity **Cameron predicts less
+deflection than even Newton.** At this crossover point GR predicts
+61% more deflection than Cameron — a large, measurable difference
+that does not require precision near the speed of light.
 
-At this velocity:
-- Cameron: 1.42 arcseconds
-- GR: 2.29 arcseconds
-- Newton: 1.42 arcseconds
+### Feature 2 — Decreasing deflection at high velocity
 
-GR predicts 61% more deflection than the Cameron framework at this
-specific velocity. This is detectable without requiring precision
-near the speed of light.
+For β > 0.786, increasing the particle velocity decreases the Cameron
+deflection. At β = 0.99: Cameron gives 0.25 arcseconds vs GR's 1.77
+arcseconds — a **factor of seven** difference.
 
-Above β = 0.786: **Cameron predicts less deflection than even Newton.**
+**Physical reason — the 3D to 2D collapse:**
 
-### Feature 2 — Decreasing Deflection at High Velocity
+As β increases toward 1, length contraction compresses the particle
+in the direction of motion. The particle becomes a pancake — zero
+extent in the direction of motion, full extent in the transverse
+plane. As β → 1 the particle is effectively 2D.
 
-For β > 0.786, increasing the particle velocity *decreases* the
-Cameron deflection. The factor √(1−β²) = 1/γ in the numerator
-of equation (VIII.1) falls faster than the coupling (1+β²) rises.
+Gravity couples to the 3D topological knot through Im(Q) = m√G.
+A 2D pancake has zero gravitational cross-section in the direction
+of motion. But the deflection requires a transverse force on the
+particle's inertia, and inertia = p = m(γv) → ∞.
 
-At β = 0.99: Cameron gives 0.25 arcseconds vs GR's 1.77 arcseconds
-— a factor of **seven** difference.
+The gravitational force is finite. The inertia is infinite.
+The deflection goes to zero.
 
-**Physical reason:** the relativistic momentum p = γmβc grows
-without bound as β → 1. The transverse impulse Δp_⊥ is finite
-(the particle passes the Sun in finite time). So α = Δp_⊥/p → 0.
-The particle has too much inertia to be deflected — the infinite
-forward pressure of the cosmic boundary asymmetry manifests as
-infinite resistance to transverse acceleration.
+**The particle that looks most like a photon — 2D, apparently
+massless, apparently following the null geodesic path — is the
+particle least deflected by gravity in the Cameron framework.**
 
-### Feature 3 — The Hard Discontinuity at v = c
+### Feature 3 — Hard discontinuity at v = c
 
 For massive particles as β → 1: α_Cameron → 0.
 For massless photons (β = 1): α_Cameron = 1.752 arcseconds (Eddington).
 
-This is a hard discontinuity in the Cameron framework.
+This is a hard discontinuity absent from GR.
 
-For massive particles: p = γmv → ∞ as β → 1. Deflection → 0.
-For photons: p = E/c (finite). Full Eddington deflection.
+**Physical origin:** For massive particles, p = γmβc → ∞ as β → 1.
+The particle has too much proper velocity to be deflected. For photons,
+p = E/c is finite — there is no rest mass and no proper velocity
+divergence. The photon IS the null geodesic surface — not approaching
+it but being it. These are categorically different situations
+separated by the null geodesic exclusion principle (Section IX.4).
 
-**GR predicts no such discontinuity.** In GR the deflection of
-massive particles approaches the Eddington value smoothly as β → 1.
-
-The physical origin of the discontinuity in the Cameron framework:
-massive particles always have P_im = mc ≠ 0 — a nonzero imaginary
-tether that keeps them off the null geodesic. A photon exists exactly
-on the null geodesic (d² = 0) where both sectors have equal weight.
-These are categorically different situations. As a massive particle
-approaches v = c it gets arbitrarily close to the null geodesic but
-never reaches it. Its coupling to the imaginary sector approaches 2M
-(the photon value) but its momentum simultaneously approaches infinity.
-The deflection angle — the ratio of transverse impulse to total
-momentum — goes to zero.
-
-A photon, having no rest mass, sits permanently on the null geodesic.
-It couples to both sectors simultaneously by geometry, not velocity.
-The deflection is the full Eddington value.
-
-**This is the sharpest quantitative distinction between the Cameron
-framework and General Relativity.**
+No amount of acceleration turns a massive particle into a photon.
+The null geodesic exclusion principle prevents it. The only way to
+cross the boundary is annihilation.
 
 ---
 
-## VIII.5 The Connection to the Perihelion Advance
+## VIII.5 The Schwarzschild Connection
+
+The behavior of the Cameron beam deflection is the same mathematical
+structure as the coordinate velocity of matter infalling toward a
+black hole.
+
+**Schwarzschild coordinate velocity:**
+```
+v_coord(r) = c(1 − r_s/r)√(r_s/r)
+```
+
+This peaks at r = 3r_s with v_max = 2c/(3√3) ≈ 0.385c, then
+decreases back to zero at the event horizon r = r_s.
+
+**Cameron beam deflection:**
+```
+α(β) ∝ (1+β²)√(1−β²)/β²
+```
+
+This decreases from its Newtonian value and goes to zero at β = 1.
+
+**Both have the form: (growing coupling factor) × (vanishing factor)**
+
+Both go to zero as the null geodesic boundary is approached:
+- For infalling matter: the event horizon r = r_s IS the null geodesic
+- For accelerating particles: β = 1 IS the null geodesic
+
+In both cases **coordinate observables vanish at the null geodesic
+while proper observables diverge.** The Schwarzschild freezing (matter
+appearing to freeze at the horizon as seen by a distant observer) and
+the beam deflection going to zero are the same geometric fact — the
+behavior of coordinate observables near the null geodesic d² = 0 —
+expressed in different physical situations.
+
+The null geodesic is not a place of nothing. It is the place where
+the coordinate description and the proper description have maximally
+diverged.
+
+---
+
+## VIII.6 The Penrose-Terrell Effect and the Physical Medium
+
+The Penrose-Terrell theorem (1959) showed that a rigid body moving
+through vacuum appears **rotated** (not length-contracted) to a
+distant observer, due to light travel time differences across the
+object. This result is exact for vacuum.
+
+In the Cameron framework, space is not empty — it is the ISM/CGM
+medium and the imaginary sector fluid. A relativistic beam in this
+medium experiences effects beyond the Penrose-Terrell rotation.
+
+**The Doppler spectrum sequence** for a mirror-coated object
+approaching an observer shows green light (550 nm at rest) shifting to:
+- β = 0.3: violet (404 nm)
+- β = 0.5: UV (invisible to eye)
+- β = 0.9: X-ray
+- β = 0.99: gamma ray
+
+Receding: green → red → infrared → microwave → invisible.
+
+The object IS physically collapsing toward 2D (length contraction is
+real). The Penrose-Terrell rotation is the visual consequence of light
+travel time differences across this collapsing structure. Both are
+present simultaneously and do not contradict each other.
+
+See Section IX.9 for the full treatment of physical compression in a
+medium and the hull temperature speedometer — a locally measurable
+prediction that follows from the same medium asymmetry.
+
+---
+
+## VIII.7 Connection to the Perihelion Advance
 
 The M_eff coupling M(1+β²) appears in both the perihelion advance
-(Section VII) and the beam deflection (this section). They are the
-same physical mechanism in two different dynamical regimes:
+(Section VII) and the beam deflection. They are the same physical
+mechanism in two different dynamical regimes:
 
 **Perihelion advance (slow orbital motion, β ~ 10⁻⁴):**
-The coupling integrates over many orbits. The effect accumulates
-to 14.33 arcsec/century despite the tiny v²/c² per orbit.
+The coupling integrates over 415 orbits per century to produce
+14.33 arcsec — the 2/6 contribution to the total 43.00 arcsec.
 
 **Beam deflection (single pass, β from 0.1 to 0.99):**
-The coupling acts once. But the momentum denominator grows as γ
+The coupling acts once, but the momentum denominator grows as γ
 and cancels the coupling for massive particles near β = 1.
 
-The same equation (VII.1) gives:
-- A tiny but measurable effect for slowly orbiting planets
-- A qualitatively different behaviour for relativistic beams
+The same equation M_eff = M(1+β²) gives:
+- A tiny but measurable orbital precession for planets
+- A qualitatively different behavior for relativistic beams
 - The exact Eddington factor for photons
 
-One equation. Three regimes. All three are consequences of the
-geometry of the PMV rotation angle θ and the null geodesic.
+One equation. Three regimes. All three consequences of the PMV
+rotation angle θ and the null geodesic geometry.
 
 ---
 
-## VIII.6 Experimental Feasibility
+## VIII.8 Experimental Feasibility
 
-**Current status:** relativistic neutral beams at the required
-intensities and precisions are not currently available. This is a
-theoretical prediction, not a confirmed result.
+**Current status:** Relativistic neutral beams at the required
+intensities are not currently available. This is a theoretical
+prediction, not a confirmed result.
 
 **What would be needed:**
 
-At β = 0.5, Cameron and GR differ by 13% (3.79 vs 4.38 arcsec
-grazing the Sun). This is in principle detectable with precision
-astrometry if a sufficiently intense neutral beam could be produced.
+At β = 0.786, Cameron and GR differ by a factor of 1.6 (1.42 vs 2.29
+arcsec). This is detectable in principle with precision astrometry.
 
 At β = 0.9, the difference is a factor of 2.3 (0.85 vs 1.96 arcsec).
 This is qualitative — Cameron predicts less than half the GR value.
 
 At β = 0.99, the difference is a factor of 7 (0.25 vs 1.77 arcsec).
-This does not require exquisite precision — it only requires
-determining whether the deflection is closer to 0.25 or to 1.77.
+This does not require exquisite precision — only determining whether
+deflection is closer to 0.25 or to 1.77.
 
-**The practical limit:** relativistic heavy ion beams at CERN reach
-β ≈ 0.9999 but these are charged nuclei, not neutral particles.
-Neutral atom beams at relativistic speeds require new technology.
-A more practical near-term test might use a very massive gravitating
-body (neutron star) at known distance with a long-baseline detector.
-
-**What makes the experiment worth pursuing:** at β = 0.9 the
-Cameron and GR predictions differ by a factor of two. Either
-deflection increases toward the Eddington limit as β increases (GR)
-or deflection decreases toward zero (Cameron). An experiment capable
-of measuring at β = 0.9 with 20% precision would distinguish the
-two frameworks definitively. This is not a percent-level precision
-measurement — it is a qualitative test.
+**What makes this worth pursuing:** The Cameron and GR predictions
+differ qualitatively. Either deflection increases toward the Eddington
+limit as β increases (GR) or deflection decreases toward zero
+(Cameron). An experiment capable of measuring at β = 0.9 with 20%
+precision would be decisive. This is not a percent-level test.
 
 ---
 
-## VIII.7 The Cosmic Boundary Asymmetry
-
-The decreasing deflection at high velocity is related to a broader
-physical effect — the asymmetry of the cosmic boundary conditions
-as seen by a rapidly moving particle.
-
-As β → 1, the forward hemisphere of the universe appears blueshifted
-and increasingly dense in the particle's frame. The backward
-hemisphere appears redshifted and increasingly sparse.
-
-```
-T_forward  =  T₀ · √((1+β)/(1-β))
-T_backward =  T₀ · √((1-β)/(1+β))
-```
-
-At β = 0.99: T_forward = 38 K (CMB at rest: 2.725 K)
-At β = 0.9999: T_forward = 385 K (above water boiling point)
-
-This growing asymmetry of the cosmic boundary conditions IS the
-physical mechanism behind the infinite resistance to further
-acceleration as β → 1. The universe is literally pressing back.
-
-The deflection going to zero for massive particles near β = 1 is
-the same mechanism expressed in the transverse direction — the
-particle cannot be deflected because the forward momentum has grown
-to the point where any transverse impulse is negligible relative to
-the total momentum.
-
-This has implications for interstellar travel: the practical
-engineering limit for neutral beam propagation through the solar
-gravitational field is not a precision issue but a fundamental one.
-Above β ≈ 0.786 the beam deflects LESS than Newton predicts — an
-initially counterintuitive result that follows directly from the
-Cameron momentum suppression.
-
----
-
-## VIII.8 Summary
+## VIII.9 Summary
 
 | Quantity | GR prediction | Cameron prediction |
 |---|---|---|
@@ -267,6 +313,13 @@ where no precision measurements currently exist.
 
 **The beam deflection experiment is the cleanest available test
 that distinguishes the Cameron framework from General Relativity.**
+
+**The physical content of the distinction:** GR couples gravity to
+the full stress-energy tensor (includes γm). The Cameron framework
+couples gravity to the imaginary charge Im(Q) = m√G — the invariant
+rest mass. Both are internally consistent relativistic frameworks
+applying Interpretation B of SR. They make different predictions
+above β = 0.5. The experiment decides.
 
 ---
 
