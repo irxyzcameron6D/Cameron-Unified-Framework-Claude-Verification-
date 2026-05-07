@@ -662,7 +662,7 @@ which next-generation X-ray observatories will determine.
 *Previous: [Section V — Black Holes and the Metric Boundary](section_V_black_holes.md)*  
 *Return to: [README](../README.md)*
 
-See Sections VII and VIII for new derivations extending the published framework.
+*See Sections VII and VIII for new derivations extending the published framework.*
 ---
 
 *Open questions documented in [disputes/what_doesnt_work.md](../disputes/what_doesnt_work.md)*
