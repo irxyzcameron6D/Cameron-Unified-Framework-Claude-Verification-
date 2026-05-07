@@ -648,6 +648,10 @@ which next-generation X-ray observatories will determine.
 
 ---
 
+*See Sections VII and VIII for new derivations extending the published framework.*
+
+---
+
 *Previous: [Section VI.5 — The Three Papers as One Framework](section_VI_published_results.md)*  
 *Return to: [README](../README.md)*  
 *Figures: [magellanic_cloud_test.png](../figures/magellanic_cloud_test.png)*  
@@ -662,7 +666,6 @@ which next-generation X-ray observatories will determine.
 *Previous: [Section V — Black Holes and the Metric Boundary](section_V_black_holes.md)*  
 *Return to: [README](../README.md)*
 
-*See Sections VII and VIII for new derivations extending the published framework.*
 ---
 
 *Open questions documented in [disputes/what_doesnt_work.md](../disputes/what_doesnt_work.md)*
