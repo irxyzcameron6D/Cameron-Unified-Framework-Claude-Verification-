@@ -6,6 +6,10 @@
 
 ---
 
+For the spin and Pauli exclusion consequences of the PMV bivector, see Section II.5.
+
+---
+
 ## III.1 The Complex Charge
 
 In the pseudo-Euclidean dual hourglass metric, particles have two
