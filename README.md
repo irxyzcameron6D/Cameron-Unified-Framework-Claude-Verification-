@@ -188,6 +188,7 @@ cameron-unified-framework-verified/
 ├── .gitignore
 │
 ├── papers/
+│   ├── faq_verified_repository.md          ← questions from physicists answered
 │   ├── section_I_metric.md
 │   ├── section_II_pmv_kinematics.md
 │   ├── section_II4_hamiltonian.md
@@ -201,7 +202,7 @@ cameron-unified-framework-verified/
 │   ├── section_VII_perihelion_advance.md   ← new derivation, 3:2:1 ratio
 │   ├── section_VIII_beam_deflection.md     ← testable prediction
 │   └── section_IX_contemplate.md           ← things to contemplate and refine
-│
+
 ├── montecarlo/
 │   ├── nuclear_anchor_montecarlo.py        ← 8–14σ p-n attraction
 │   ├── nuclear_vdw_montecarlo.py           ← baseline uniform sphere
@@ -355,3 +356,6 @@ accountability for all claims belong to Donald Cameron.
 
 *For a comparison of the Gemini and Claude versions, see:*  
 **[COMPARISON.md](COMPARISON.md)**
+
+**For physicists:** [Verification FAQ](papers/faq_verified_repository.md) —
+what has been verified, how to reproduce it, known failures, and open problems.
