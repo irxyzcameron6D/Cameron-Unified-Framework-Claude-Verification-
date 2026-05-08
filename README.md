@@ -55,6 +55,9 @@ documented too.
 | Neutron charge radius sign | r²_n negative — d quarks at surface | −0.114 fm² measured | ✓ |
 | Mercury perihelion advance | 43.00 arcsec/century | 43.0 ± 0.5 arcsec/century | **exact ✓** |
 | Relativistic beam deflection (β→1) | → 0 (massive), jump to 1.752″ (photon) | untested | prediction |
+| Proton spin — intrinsic fraction | 30% from P_re×P_im bivector | 30% measured (EMC 1987) | ✓ |
+| Proton spin — orbital fraction | 70% from Zitterbewegung L=r×p at 0.99c | 70% measured (EMC 1987) | ✓ |
+| Hull temperature speedometer | β = (R−1)/(R+1), R = T_fwd/T_aft | locally measurable | prediction |
 | LLR residual from vacuum refraction | ~10⁻¹⁸ mm | 1.7–2.0 mm observed | ✗ wrong scale |
 | Full orbital average force | −3.62×10⁻⁶⁹ N | −1.87×10⁻⁶⁴ N (Newton) | gap, open |
 
@@ -188,13 +191,16 @@ cameron-unified-framework-verified/
 │   ├── section_I_metric.md
 │   ├── section_II_pmv_kinematics.md
 │   ├── section_II4_hamiltonian.md
+│   ├── section_II5_spin_pauli.md           ← NEW — spin, Pauli, proton spin puzzle
 │   ├── section_III_complex_charge.md       ← neutron correction applied
 │   ├── section_IV_four_forces.md           ← Zitterbewegung mechanism
 │   ├── section_V_black_holes.md
 │   ├── section_VI_published_results.md     ← three published papers
 │   ├── section_VI5_rotation_curves.md      ← LMC orbital test (0.3%)
-│   ├── section_VI6_rotation_curves.md      ← perihelion + beam deflection
-│   └── section_VII_contemplate.md          ← things to contemplate and refine
+│   ├── section_VI6_rotation_curves.md      ← extended rotation curve modelling
+│   ├── section_VII_perihelion_advance.md   ← new derivation, 3:2:1 ratio
+│   ├── section_VIII_beam_deflection.md     ← testable prediction
+│   └── section_IX_contemplate.md           ← things to contemplate and refine
 │
 ├── montecarlo/
 │   ├── nuclear_anchor_montecarlo.py        ← 8–14σ p-n attraction
