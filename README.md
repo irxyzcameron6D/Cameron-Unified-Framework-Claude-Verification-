@@ -357,5 +357,5 @@ accountability for all claims belong to Donald Cameron.
 *For a comparison of the Gemini and Claude versions, see:*  
 **[COMPARISON.md](COMPARISON.md)**
 
-**For physicists:** [Verification FAQ](papers/faq_verified_repository.md) —
-what has been verified, how to reproduce it, known failures, and open problems.
+**For physicists:** **[Verification FAQ](papers/faq_verified_repository.md)** *—
+what has been verified, how to reproduce it, known failures, and open problems.*
