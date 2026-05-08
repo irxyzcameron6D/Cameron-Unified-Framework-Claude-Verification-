@@ -319,6 +319,10 @@ EM experiments.
 
 ---
 
+*The spin structure of the PMV bivector and its implications for quark pairing and the Pauli exclusion principle are developed in Section II.5*
+
+---
+
 *Next: Section III — Complex Charge and Force Unification*  
 *Previous: Section II.3 — The Velocity Addition Law from PMV Rotation*
 
